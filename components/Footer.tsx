@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             <span className="text-gray-600">|</span>
             <a href="https://t.me/disgainercoin" target="_blank" rel="noopener noreferrer" className="hover:text-[#FAFF00] uppercase">[Telegram]</a>
             <span className="text-gray-600">|</span>
-            <a href="#" className="hover:text-[#FAFF00] uppercase">[DexScreener]</a>
+            <a href="https://dexscreener.com/solana/7bdvbgkcyui3v4tdwg27p9r9loqr4px9mq4fqocbbbhf" target="_blank" rel="noopener noreferrer" className="hover:text-[#FAFF00] uppercase">[DexScreener]</a>
         </div>
         <p className="text-xs text-gray-500 max-w-2xl mx-auto leading-relaxed">
           © 2024 DISGAINER COIN ($GAIN). 

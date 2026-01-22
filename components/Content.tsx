@@ -112,7 +112,7 @@ const Content: React.FC = () => {
             <strong>CONTRACT ADDRESS:</strong>
           </p>
           <div className="bg-[#FAFF00] text-black font-mono font-bold py-3 px-2 md:px-6 mb-8 break-all border-2 border-white select-all cursor-copy hover:scale-105 transition-transform">
-            xxxxxxxxxxxxxxxxxxxxxxx
+            CKpBUTzkV2f6z6M1cZ5Sy4wcta2DUhkK64rQ8j5Gpump
           </div>
           
           <button className="bg-red-600 hover:bg-red-500 text-white font-pixel py-4 px-8 border-b-4 border-r-4 border-red-900 active:border-0 active:translate-y-1 transition-all">
