@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gain-black text-white py-12 border-t border-[#FAFF00]">
       <div className="container mx-auto px-4 text-center font-mono">
         <div className="flex justify-center items-center gap-4 mb-8">
-            <a href="#" className="hover:text-[#FAFF00] uppercase">[Twitter/X]</a>
+            <a href="https://twitter.com/i/communities/2014389418488901996" target="_blank" rel="noopener noreferrer" className="hover:text-[#FAFF00] uppercase">[Twitter/X]</a>
             <span className="text-gray-600">|</span>
             <a href="https://t.me/disgainercoin" target="_blank" rel="noopener noreferrer" className="hover:text-[#FAFF00] uppercase">[Telegram]</a>
             <span className="text-gray-600">|</span>
