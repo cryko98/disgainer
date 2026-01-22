@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, AlertOctagon, DollarSign, XCircle } from 'lucide-react';
+import { Wallet, Coins, Globe, ArrowLeftRight } from 'lucide-react';
 
 const WarningBanner: React.FC<{ text: string }> = ({ text }) => (
   <div className="w-full bg-[#FAFF00] py-2 px-4 border-y-4 border-black mb-8 overflow-hidden">
@@ -12,7 +12,7 @@ const WarningBanner: React.FC<{ text: string }> = ({ text }) => (
 const Content: React.FC = () => {
   return (
     <section id="warning" className="relative w-full bg-[#E5E5E5] text-black py-16 md:py-24 px-4 min-h-screen">
-      <div className="max-w-4xl mx-auto border-4 border-black p-4 md:p-12 shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] bg-[#F0F0F0]">
+      <div className="max-w-6xl mx-auto border-4 border-black p-4 md:p-12 shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] bg-[#F0F0F0]">
         
         {/* Header */}
         <div className="text-center mb-12">
@@ -70,31 +70,39 @@ const Content: React.FC = () => {
 
         <WarningBanner text="CAUTION: UNCONTROLLABLE GREEN CANDLES DETECTED // DO NOT FADE // PUMP IN PROGRESS" />
 
-        {/* Features / Tokenomics */}
+        {/* HOW TO BUY STEPS (Replaces Tokenomics) */}
         <div id="tokenomics" className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group">
-              <TrendingUp className="w-12 h-12 mb-4 group-hover:animate-bounce" />
-              <h3 className="font-pixel text-lg mb-2">100% FAIR LAUNCH</h3>
-              <p className="font-mono text-sm">No team tokens. No hidden wallets. Just pure, unadulterated market chaos.</p>
+           {/* Step 1 */}
+           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group relative">
+              <div className="absolute top-2 right-2 font-pixel text-xl opacity-20 group-hover:opacity-100">01</div>
+              <Wallet className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="font-pixel text-lg mb-2">CREATE WALLET</h3>
+              <p className="font-mono text-sm">Download Phantom or Solflare wallet extension or app.</p>
            </div>
-           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group">
-              <AlertOctagon className="w-12 h-12 mb-4 group-hover:animate-pulse" />
-              <h3 className="font-pixel text-lg mb-2">LP BURNT</h3>
-              <p className="font-mono text-sm">We lit the liquidity on fire so we can't rug you even if we wanted to (we don't).</p>
+           {/* Step 2 */}
+           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group relative">
+              <div className="absolute top-2 right-2 font-pixel text-xl opacity-20 group-hover:opacity-100">02</div>
+              <Coins className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="font-pixel text-lg mb-2">GET SOLANA</h3>
+              <p className="font-mono text-sm">Buy SOL on an exchange and send it to your wallet.</p>
            </div>
-           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group">
-              <DollarSign className="w-12 h-12 mb-4 group-hover:rotate-180 transition-transform" />
-              <h3 className="font-pixel text-lg mb-2">ZERO TAX</h3>
-              <p className="font-mono text-sm">Because paying taxes is for people who don't hold $GAIN.</p>
+           {/* Step 3 */}
+           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group relative">
+              <div className="absolute top-2 right-2 font-pixel text-xl opacity-20 group-hover:opacity-100">03</div>
+              <Globe className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="font-pixel text-lg mb-2">GO TO PUMP.FUN</h3>
+              <p className="font-mono text-sm">Connect wallet to pump.fun and paste the CA below.</p>
            </div>
-           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group">
-              <XCircle className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="font-pixel text-lg mb-2">NO ROADMAP</h3>
-              <p className="font-mono text-sm">Where we're going, we don't need roads. We need spacesuits.</p>
+           {/* Step 4 */}
+           <div className="border-2 border-black p-6 hover:bg-black hover:text-[#FAFF00] transition-colors cursor-crosshair group relative">
+              <div className="absolute top-2 right-2 font-pixel text-xl opacity-20 group-hover:opacity-100">04</div>
+              <ArrowLeftRight className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="font-pixel text-lg mb-2">SWAP FOR $GAIN</h3>
+              <p className="font-mono text-sm">Swap your SOL for $GAIN and hold for the moon.</p>
            </div>
         </div>
 
-        {/* CTA */}
+        {/* CTA (Reverted to original "Final Warning" style) */}
         <div id="how-to-buy" className="text-center bg-black text-[#FAFF00] p-8 md:p-12 border-4 border-[#FAFF00]">
           <h2 className="font-pixel text-2xl md:text-3xl mb-6">FINAL WARNING</h2>
           <p className="font-mono mb-8 max-w-2xl mx-auto">
